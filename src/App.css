@@ -1,0 +1,24 @@
+#root {
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.8) 50%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url("../src/assets/back.jpg");
+
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 1280px;
+  height: 700px;
+  margin: 0 auto;
+  color: white;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 10px;
+  padding-left: 25px;
+}

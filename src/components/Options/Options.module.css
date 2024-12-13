@@ -1,0 +1,64 @@
+.action {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+
+@keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0px;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
+.button {
+  overflow: hidden;
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: black;
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: rgba(57, 255, 20, 1);
+  border-radius: 8px;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.7), 0 0 20px rgba(57, 255, 20, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background-color: #a19f9f;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8),
+    0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+.button:active {
+  transform: scale(0.95) translateX(2px);
+  box-shadow: none;
+}
+
+.neutral {
+  background-color: rgba(255, 255, 0, 1);
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.7), 0 0 20px rgba(255, 255, 0, 0.5);
+}
+
+.bad {
+  background-color: rgba(255, 7, 58, 1);
+  box-shadow: 0 0 10px rgba(255, 7, 58, 0.7), 0 0 20px rgba(255, 7, 58, 0.5);
+}
+
+.reset {
+  background-color: lightgray;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.7),
+    0 0 20px rgba(128, 128, 128, 0.5);
+}
